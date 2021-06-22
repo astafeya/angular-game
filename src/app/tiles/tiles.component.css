@@ -1,0 +1,65 @@
+.gameNavigation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    height: 100vh;
+    text-align: center;    
+    background-color: #8888ff;
+}
+
+.startButton {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f8ff;
+    border: 1px solid #000000;
+    padding: 4vh;
+    margin-top: 25vh;
+    display: inline-block;
+    position: relative;
+}
+
+.gameOver {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    padding: auto;
+    padding-top: 25vh;
+}
+
+.gameArea {
+    overflow: hidden;
+    border: 2px solid #000000;
+    margin: auto;
+    width: 99.75vh;
+    height: 99.75vh;
+}
+
+.hide {
+    display: none;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /*box-sizing: border-box;*/
+}
+
+
+.player {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.tile {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 4.75vh;
+    height: 4.75vh;
+}
+
+.abroad {
+    background-image: url("../../image/deadTile.jpg");
+    background-size: cover;
+    background-position: top right, 0px 0px;
+    background-origin: content-box, padding-box;
+}

@@ -1,0 +1,589 @@
+<!--id: {{this.id}} <br>
+tiles: {{this.tiles}} <br>-->
+<div id="gameNavigation" class="gameNavigation">
+    <div id="gameOver" class="gameOver hide">Вы проиграли! Хотите попробовать снова?</div>
+    <button id="startButton" class="startButton" (click)="onPressButton()">Начать игру</button>
+</div>
+<div id="gameArea" class="gameArea hide">
+    <div class="row">
+           <div id="x0y0" class="tile"></div>
+           <div id="x1y0" class="tile"></div>
+           <div id="x2y0" class="tile"></div>
+           <div id="x3y0" class="tile"></div>
+           <div id="x4y0" class="tile"></div>
+
+           <div id="x5y0" class="tile"></div>
+           <div id="x6y0" class="tile"></div>
+           <div id="x7y0" class="tile"></div>
+           <div id="x8y0" class="tile"></div>
+           <div id="x9y0" class="tile"></div>
+           
+           <div id="x10y0" class="tile"></div>
+           <div id="x11y0" class="tile"></div>
+           <div id="x12y0" class="tile"></div>
+           <div id="x13y0" class="tile"></div>
+           <div id="x14y0" class="tile"></div>
+
+           <div id="x15y0" class="tile"></div>
+           <div id="x16y0" class="tile"></div>
+           <div id="x17y0" class="tile"></div>
+           <div id="x18y0" class="tile"></div>
+           <div id="x19y0" class="tile"></div>
+           
+           <div id="x20y0" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y1" class="tile"></div>
+           <div id="x1y1" class="tile"></div>
+           <div id="x2y1" class="tile"></div>
+           <div id="x3y1" class="tile"></div>
+           <div id="x4y1" class="tile"></div>
+
+           <div id="x5y1" class="tile"></div>
+           <div id="x6y1" class="tile"></div>
+           <div id="x7y1" class="tile"></div>
+           <div id="x8y1" class="tile"></div>
+           <div id="x9y1" class="tile"></div>
+           
+           <div id="x10y1" class="tile"></div>
+           <div id="x11y1" class="tile"></div>
+           <div id="x12y1" class="tile"></div>
+           <div id="x13y1" class="tile"></div>
+           <div id="x14y1" class="tile"></div>
+
+           <div id="x15y1" class="tile"></div>
+           <div id="x16y1" class="tile"></div>
+           <div id="x17y1" class="tile"></div>
+           <div id="x18y1" class="tile"></div>
+           <div id="x19y1" class="tile"></div>
+           
+           <div id="x20y1" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y2" class="tile"></div>
+           <div id="x1y2" class="tile"></div>
+           <div id="x2y2" class="tile"></div>
+           <div id="x3y2" class="tile"></div>
+           <div id="x4y2" class="tile"></div>
+
+           <div id="x5y2" class="tile"></div>
+           <div id="x6y2" class="tile"></div>
+           <div id="x7y2" class="tile"></div>
+           <div id="x8y2" class="tile"></div>
+           <div id="x9y2" class="tile"></div>
+           
+           <div id="x10y2" class="tile"></div>
+           <div id="x11y2" class="tile"></div>
+           <div id="x12y2" class="tile"></div>
+           <div id="x13y2" class="tile"></div>
+           <div id="x14y2" class="tile"></div>
+
+           <div id="x15y2" class="tile"></div>
+           <div id="x16y2" class="tile"></div>
+           <div id="x17y2" class="tile"></div>
+           <div id="x18y2" class="tile"></div>
+           <div id="x19y2" class="tile"></div>
+           
+           <div id="x20y2" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y3" class="tile"></div>
+           <div id="x1y3" class="tile"></div>
+           <div id="x2y3" class="tile"></div>
+           <div id="x3y3" class="tile"></div>
+           <div id="x4y3" class="tile"></div>
+
+           <div id="x5y3" class="tile"></div>
+           <div id="x6y3" class="tile"></div>
+           <div id="x7y3" class="tile"></div>
+           <div id="x8y3" class="tile"></div>
+           <div id="x9y3" class="tile"></div>
+           
+           <div id="x10y3" class="tile"></div>
+           <div id="x11y3" class="tile"></div>
+           <div id="x12y3" class="tile"></div>
+           <div id="x13y3" class="tile"></div>
+           <div id="x14y3" class="tile"></div>
+
+           <div id="x15y3" class="tile"></div>
+           <div id="x16y3" class="tile"></div>
+           <div id="x17y3" class="tile"></div>
+           <div id="x18y3" class="tile"></div>
+           <div id="x19y3" class="tile"></div>
+           
+           <div id="x20y3" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y4" class="tile"></div>
+           <div id="x1y4" class="tile"></div>
+           <div id="x2y4" class="tile"></div>
+           <div id="x3y4" class="tile"></div>
+           <div id="x4y4" class="tile"></div>
+
+           <div id="x5y4" class="tile"></div>
+           <div id="x6y4" class="tile"></div>
+           <div id="x7y4" class="tile"></div>
+           <div id="x8y4" class="tile"></div>
+           <div id="x9y4" class="tile"></div>
+           
+           <div id="x10y4" class="tile"></div>
+           <div id="x11y4" class="tile"></div>
+           <div id="x12y4" class="tile"></div>
+           <div id="x13y4" class="tile"></div>
+           <div id="x14y4" class="tile"></div>
+
+           <div id="x15y4" class="tile"></div>
+           <div id="x16y4" class="tile"></div>
+           <div id="x17y4" class="tile"></div>
+           <div id="x18y4" class="tile"></div>
+           <div id="x19y4" class="tile"></div>
+           
+           <div id="x20y4" class="tile"></div>
+    </div>
+
+    <div class="row">
+           <div id="x0y5" class="tile"></div>
+           <div id="x1y5" class="tile"></div>
+           <div id="x2y5" class="tile"></div>
+           <div id="x3y5" class="tile"></div>
+           <div id="x4y5" class="tile"></div>
+
+           <div id="x5y5" class="tile"></div>
+           <div id="x6y5" class="tile"></div>
+           <div id="x7y5" class="tile"></div>
+           <div id="x8y5" class="tile"></div>
+           <div id="x9y5" class="tile"></div>
+           
+           <div id="x10y5" class="tile"></div>
+           <div id="x11y5" class="tile"></div>
+           <div id="x12y5" class="tile"></div>
+           <div id="x13y5" class="tile"></div>
+           <div id="x14y5" class="tile"></div>
+
+           <div id="x15y5" class="tile"></div>
+           <div id="x16y5" class="tile"></div>
+           <div id="x17y5" class="tile"></div>
+           <div id="x18y5" class="tile"></div>
+           <div id="x19y5" class="tile"></div>
+           
+           <div id="x20y5" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y6" class="tile"></div>
+           <div id="x1y6" class="tile"></div>
+           <div id="x2y6" class="tile"></div>
+           <div id="x3y6" class="tile"></div>
+           <div id="x4y6" class="tile"></div>
+
+           <div id="x5y6" class="tile"></div>
+           <div id="x6y6" class="tile"></div>
+           <div id="x7y6" class="tile"></div>
+           <div id="x8y6" class="tile"></div>
+           <div id="x9y6" class="tile"></div>
+           
+           <div id="x10y6" class="tile"></div>
+           <div id="x11y6" class="tile"></div>
+           <div id="x12y6" class="tile"></div>
+           <div id="x13y6" class="tile"></div>
+           <div id="x14y6" class="tile"></div>
+
+           <div id="x15y6" class="tile"></div>
+           <div id="x16y6" class="tile"></div>
+           <div id="x17y6" class="tile"></div>
+           <div id="x18y6" class="tile"></div>
+           <div id="x19y6" class="tile"></div>
+           
+           <div id="x20y6" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y7" class="tile"></div>
+           <div id="x1y7" class="tile"></div>
+           <div id="x2y7" class="tile"></div>
+           <div id="x3y7" class="tile"></div>
+           <div id="x4y7" class="tile"></div>
+
+           <div id="x5y7" class="tile"></div>
+           <div id="x6y7" class="tile"></div>
+           <div id="x7y7" class="tile"></div>
+           <div id="x8y7" class="tile"></div>
+           <div id="x9y7" class="tile"></div>
+           
+           <div id="x10y7" class="tile"></div>
+           <div id="x11y7" class="tile"></div>
+           <div id="x12y7" class="tile"></div>
+           <div id="x13y7" class="tile"></div>
+           <div id="x14y7" class="tile"></div>
+
+           <div id="x15y7" class="tile"></div>
+           <div id="x16y7" class="tile"></div>
+           <div id="x17y7" class="tile"></div>
+           <div id="x18y7" class="tile"></div>
+           <div id="x19y7" class="tile"></div>
+           
+           <div id="x20y7" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y8" class="tile"></div>
+           <div id="x1y8" class="tile"></div>
+           <div id="x2y8" class="tile"></div>
+           <div id="x3y8" class="tile"></div>
+           <div id="x4y8" class="tile"></div>
+
+           <div id="x5y8" class="tile"></div>
+           <div id="x6y8" class="tile"></div>
+           <div id="x7y8" class="tile"></div>
+           <div id="x8y8" class="tile"></div>
+           <div id="x9y8" class="tile"></div>
+           
+           <div id="x10y8" class="tile"></div>
+           <div id="x11y8" class="tile"></div>
+           <div id="x12y8" class="tile"></div>
+           <div id="x13y8" class="tile"></div>
+           <div id="x14y8" class="tile"></div>
+
+           <div id="x15y8" class="tile"></div>
+           <div id="x16y8" class="tile"></div>
+           <div id="x17y8" class="tile"></div>
+           <div id="x18y8" class="tile"></div>
+           <div id="x19y8" class="tile"></div>
+           
+           <div id="x20y8" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y9" class="tile"></div>
+           <div id="x1y9" class="tile"></div>
+           <div id="x2y9" class="tile"></div>
+           <div id="x3y9" class="tile"></div>
+           <div id="x4y9" class="tile"></div>
+
+           <div id="x5y9" class="tile"></div>
+           <div id="x6y9" class="tile"></div>
+           <div id="x7y9" class="tile"></div>
+           <div id="x8y9" class="tile"></div>
+           <div id="x9y9" class="tile"></div>
+           
+           <div id="x10y9" class="tile"></div>
+           <div id="x11y9" class="tile"></div>
+           <div id="x12y9" class="tile"></div>
+           <div id="x13y9" class="tile"></div>
+           <div id="x14y9" class="tile"></div>
+
+           <div id="x15y9" class="tile"></div>
+           <div id="x16y9" class="tile"></div>
+           <div id="x17y9" class="tile"></div>
+           <div id="x18y9" class="tile"></div>
+           <div id="x19y9" class="tile"></div>
+           
+           <div id="x20y9" class="tile"></div>
+    </div>
+
+    <div class="row">
+           <div id="x0y10" class="tile"></div>
+           <div id="x1y10" class="tile"></div>
+           <div id="x2y10" class="tile"></div>
+           <div id="x3y10" class="tile"></div>
+           <div id="x4y10" class="tile"></div>
+
+           <div id="x5y10" class="tile"></div>
+           <div id="x6y10" class="tile"></div>
+           <div id="x7y10" class="tile"></div>
+           <div id="x8y10" class="tile"></div>
+           <div id="x9y10" class="tile"></div>
+           
+           <div id="x10y10" class="tile"></div>
+           <div id="x11y10" class="tile"></div>
+           <div id="x12y10" class="tile"></div>
+           <div id="x13y10" class="tile"></div>
+           <div id="x14y10" class="tile"></div>
+
+           <div id="x15y10" class="tile"></div>
+           <div id="x16y10" class="tile"></div>
+           <div id="x17y10" class="tile"></div>
+           <div id="x18y10" class="tile"></div>
+           <div id="x19y10" class="tile"></div>
+           
+           <div id="x20y10" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y11" class="tile"></div>
+           <div id="x1y11" class="tile"></div>
+           <div id="x2y11" class="tile"></div>
+           <div id="x3y11" class="tile"></div>
+           <div id="x4y11" class="tile"></div>
+
+           <div id="x5y11" class="tile"></div>
+           <div id="x6y11" class="tile"></div>
+           <div id="x7y11" class="tile"></div>
+           <div id="x8y11" class="tile"></div>
+           <div id="x9y11" class="tile"></div>
+           
+           <div id="x10y11" class="tile"></div>
+           <div id="x11y11" class="tile"></div>
+           <div id="x12y11" class="tile"></div>
+           <div id="x13y11" class="tile"></div>
+           <div id="x14y11" class="tile"></div>
+
+           <div id="x15y11" class="tile"></div>
+           <div id="x16y11" class="tile"></div>
+           <div id="x17y11" class="tile"></div>
+           <div id="x18y11" class="tile"></div>
+           <div id="x19y11" class="tile"></div>
+           
+           <div id="x20y11" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y12" class="tile"></div>
+           <div id="x1y12" class="tile"></div>
+           <div id="x2y12" class="tile"></div>
+           <div id="x3y12" class="tile"></div>
+           <div id="x4y12" class="tile"></div>
+
+           <div id="x5y12" class="tile"></div>
+           <div id="x6y12" class="tile"></div>
+           <div id="x7y12" class="tile"></div>
+           <div id="x8y12" class="tile"></div>
+           <div id="x9y12" class="tile"></div>
+           
+           <div id="x10y12" class="tile"></div>
+           <div id="x11y12" class="tile"></div>
+           <div id="x12y12" class="tile"></div>
+           <div id="x13y12" class="tile"></div>
+           <div id="x14y12" class="tile"></div>
+
+           <div id="x15y12" class="tile"></div>
+           <div id="x16y12" class="tile"></div>
+           <div id="x17y12" class="tile"></div>
+           <div id="x18y12" class="tile"></div>
+           <div id="x19y12" class="tile"></div>
+           
+           <div id="x20y12" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y13" class="tile"></div>
+           <div id="x1y13" class="tile"></div>
+           <div id="x2y13" class="tile"></div>
+           <div id="x3y13" class="tile"></div>
+           <div id="x4y13" class="tile"></div>
+
+           <div id="x5y13" class="tile"></div>
+           <div id="x6y13" class="tile"></div>
+           <div id="x7y13" class="tile"></div>
+           <div id="x8y13" class="tile"></div>
+           <div id="x9y13" class="tile"></div>
+           
+           <div id="x10y13" class="tile"></div>
+           <div id="x11y13" class="tile"></div>
+           <div id="x12y13" class="tile"></div>
+           <div id="x13y13" class="tile"></div>
+           <div id="x14y13" class="tile"></div>
+
+           <div id="x15y13" class="tile"></div>
+           <div id="x16y13" class="tile"></div>
+           <div id="x17y13" class="tile"></div>
+           <div id="x18y13" class="tile"></div>
+           <div id="x19y13" class="tile"></div>
+           
+           <div id="x20y13" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y14" class="tile"></div>
+           <div id="x1y14" class="tile"></div>
+           <div id="x2y14" class="tile"></div>
+           <div id="x3y14" class="tile"></div>
+           <div id="x4y14" class="tile"></div>
+
+           <div id="x5y14" class="tile"></div>
+           <div id="x6y14" class="tile"></div>
+           <div id="x7y14" class="tile"></div>
+           <div id="x8y14" class="tile"></div>
+           <div id="x9y14" class="tile"></div>
+           
+           <div id="x10y14" class="tile"></div>
+           <div id="x11y14" class="tile"></div>
+           <div id="x12y14" class="tile"></div>
+           <div id="x13y14" class="tile"></div>
+           <div id="x14y14" class="tile"></div>
+
+           <div id="x15y14" class="tile"></div>
+           <div id="x16y14" class="tile"></div>
+           <div id="x17y14" class="tile"></div>
+           <div id="x18y14" class="tile"></div>
+           <div id="x19y14" class="tile"></div>
+           
+           <div id="x20y14" class="tile"></div>
+    </div>
+
+    <div class="row">
+           <div id="x0y15" class="tile"></div>
+           <div id="x1y15" class="tile"></div>
+           <div id="x2y15" class="tile"></div>
+           <div id="x3y15" class="tile"></div>
+           <div id="x4y15" class="tile"></div>
+
+           <div id="x5y15" class="tile"></div>
+           <div id="x6y15" class="tile"></div>
+           <div id="x7y15" class="tile"></div>
+           <div id="x8y15" class="tile"></div>
+           <div id="x9y15" class="tile"></div>
+           
+           <div id="x10y15" class="tile"></div>
+           <div id="x11y15" class="tile"></div>
+           <div id="x12y15" class="tile"></div>
+           <div id="x13y15" class="tile"></div>
+           <div id="x14y15" class="tile"></div>
+
+           <div id="x15y15" class="tile"></div>
+           <div id="x16y15" class="tile"></div>
+           <div id="x17y15" class="tile"></div>
+           <div id="x18y15" class="tile"></div>
+           <div id="x19y15" class="tile"></div>
+           
+           <div id="x20y15" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y16" class="tile"></div>
+           <div id="x1y16" class="tile"></div>
+           <div id="x2y16" class="tile"></div>
+           <div id="x3y16" class="tile"></div>
+           <div id="x4y16" class="tile"></div>
+
+           <div id="x5y16" class="tile"></div>
+           <div id="x6y16" class="tile"></div>
+           <div id="x7y16" class="tile"></div>
+           <div id="x8y16" class="tile"></div>
+           <div id="x9y16" class="tile"></div>
+           
+           <div id="x10y16" class="tile"></div>
+           <div id="x11y16" class="tile"></div>
+           <div id="x12y16" class="tile"></div>
+           <div id="x13y16" class="tile"></div>
+           <div id="x14y16" class="tile"></div>
+
+           <div id="x15y16" class="tile"></div>
+           <div id="x16y16" class="tile"></div>
+           <div id="x17y16" class="tile"></div>
+           <div id="x18y16" class="tile"></div>
+           <div id="x19y16" class="tile"></div>
+           
+           <div id="x20y16" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y17" class="tile"></div>
+           <div id="x1y17" class="tile"></div>
+           <div id="x2y17" class="tile"></div>
+           <div id="x3y17" class="tile"></div>
+           <div id="x4y17" class="tile"></div>
+
+           <div id="x5y17" class="tile"></div>
+           <div id="x6y17" class="tile"></div>
+           <div id="x7y17" class="tile"></div>
+           <div id="x8y17" class="tile"></div>
+           <div id="x9y17" class="tile"></div>
+           
+           <div id="x10y17" class="tile"></div>
+           <div id="x11y17" class="tile"></div>
+           <div id="x12y17" class="tile"></div>
+           <div id="x13y17" class="tile"></div>
+           <div id="x14y17" class="tile"></div>
+
+           <div id="x15y17" class="tile"></div>
+           <div id="x16y17" class="tile"></div>
+           <div id="x17y17" class="tile"></div>
+           <div id="x18y17" class="tile"></div>
+           <div id="x19y17" class="tile"></div>
+           
+           <div id="x20y17" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y18" class="tile"></div>
+           <div id="x1y18" class="tile"></div>
+           <div id="x2y18" class="tile"></div>
+           <div id="x3y18" class="tile"></div>
+           <div id="x4y18" class="tile"></div>
+
+           <div id="x5y18" class="tile"></div>
+           <div id="x6y18" class="tile"></div>
+           <div id="x7y18" class="tile"></div>
+           <div id="x8y18" class="tile"></div>
+           <div id="x9y18" class="tile"></div>
+           
+           <div id="x10y18" class="tile"></div>
+           <div id="x11y18" class="tile"></div>
+           <div id="x12y18" class="tile"></div>
+           <div id="x13y18" class="tile"></div>
+           <div id="x14y18" class="tile"></div>
+
+           <div id="x15y18" class="tile"></div>
+           <div id="x16y18" class="tile"></div>
+           <div id="x17y18" class="tile"></div>
+           <div id="x18y18" class="tile"></div>
+           <div id="x19y18" class="tile"></div>
+           
+           <div id="x20y18" class="tile"></div>
+    </div>
+    <div class="row">
+           <div id="x0y19" class="tile"></div>
+           <div id="x1y19" class="tile"></div>
+           <div id="x2y19" class="tile"></div>
+           <div id="x3y19" class="tile"></div>
+           <div id="x4y19" class="tile"></div>
+
+           <div id="x5y19" class="tile"></div>
+           <div id="x6y19" class="tile"></div>
+           <div id="x7y19" class="tile"></div>
+           <div id="x8y19" class="tile"></div>
+           <div id="x9y19" class="tile"></div>
+           
+           <div id="x10y19" class="tile"></div>
+           <div id="x11y19" class="tile"></div>
+           <div id="x12y19" class="tile"></div>
+           <div id="x13y19" class="tile"></div>
+           <div id="x14y19" class="tile"></div>
+
+           <div id="x15y19" class="tile"></div>
+           <div id="x16y19" class="tile"></div>
+           <div id="x17y19" class="tile"></div>
+           <div id="x18y19" class="tile"></div>
+           <div id="x19y19" class="tile"></div>
+           
+           <div id="x20y19" class="tile"></div>
+    </div>
+
+    <div class="row">
+           <div id="x0y20" class="tile"></div>
+           <div id="x1y20" class="tile"></div>
+           <div id="x2y20" class="tile"></div>
+           <div id="x3y20" class="tile"></div>
+           <div id="x4y20" class="tile"></div>
+
+           <div id="x5y20" class="tile"></div>
+           <div id="x6y20" class="tile"></div>
+           <div id="x7y20" class="tile"></div>
+           <div id="x8y20" class="tile"></div>
+           <div id="x9y20" class="tile"></div>
+           
+           <div id="x10y20" class="tile"></div>
+           <div id="x11y20" class="tile"></div>
+           <div id="x12y20" class="tile"></div>
+           <div id="x13y20" class="tile"></div>
+           <div id="x14y20" class="tile"></div>
+
+           <div id="x15y20" class="tile"></div>
+           <div id="x16y20" class="tile"></div>
+           <div id="x17y20" class="tile"></div>
+           <div id="x18y20" class="tile"></div>
+           <div id="x19y20" class="tile"></div>
+           
+           <div id="x20y20" class="tile"></div>
+    </div>
+</div>
+
+<!--class="hide"-->
+ 
+<input
+    (keydown.w)='onKeyDownUp()' (keydown.arrowup)='onKeyDownUp()' 
+    (keydown.a)='onKeyDownLeft()' (keydown.arrowleft)='onKeyDownLeft()'
+    (keydown.d)='onKeyDownRight()' (keydown.arrowright)='onKeyDownRight()'
+    (keydown.s)='onKeyDownDown()' (keydown.arrowdown)='onKeyDownDown()'
+    (keydown.enter)='update()'/>
+
