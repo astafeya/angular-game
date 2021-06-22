@@ -1,5 +1,7 @@
 # AngularGame
 
+This is the frontend part for https://github.com/astafeya/javaGame
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 ## Development server
